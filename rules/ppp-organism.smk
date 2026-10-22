@@ -5,6 +5,7 @@ rule ppp_organism:
         kernel_set="results/.kernel.set",
     output:
         output_notebook="results/{organism}/popgen.ipynb",
+        docs="docs/{organism}/popgen.ipynb",
     conda:
         "../envs/ppp-env.yaml"
     log:
@@ -15,4 +16,6 @@ rule ppp_organism:
         """
         papermill {input.input_notebook} {output.output_notebook} -k py-popgen
             -p organism {params.organism} 2> {log}
+        
+        cp {output.output_notebook} {output.docs}
         """

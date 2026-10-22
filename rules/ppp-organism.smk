@@ -3,13 +3,12 @@ rule ppp_organism:
         f"{workflow.basedir}/envs/ppp-env.yaml",
         input_notebook=f"{workflow.basedir}/notebooks/ppp-popgen.ipynb",
         kernel_set="results/.kernel.set",
-
     output:
         output_notebook="results/{organism}/popgen.ipynb",
     conda:
         "../envs/ppp-env.yaml"
     log:
-        "logs/set_organism.log",
+        "logs/{organism}_set_organism.log",
     params:
         organism=config['organism'],
     shell:

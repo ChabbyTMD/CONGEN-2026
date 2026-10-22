@@ -1,3 +1,5 @@
+
+
 rule set_kernel:
     input:
         f"{workflow.basedir}/envs/ppp-env.yaml",
@@ -13,13 +15,13 @@ rule set_kernel:
         """
 
 def ppp_outputs(wildcards):
-    outputs=[]
+    outputs = []
 
-    output.extend(
+    outputs.extend(
         expand(
             [
                 "results/{organism}/popgen.ipynb",
-            ], 
+            ],
             organism=config["organism"],
         )
     )

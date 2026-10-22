@@ -1,1 +1,11 @@
-organism: test
+organism: danus
+# Directories
+work_dir: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/notebooks
+data_dir: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/
+model_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/out.model
+main_vcf_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/input.vcf
+int_bed_file:
+target_loci_file:
+ima_input_file:
+subsamp_bed_file:
+

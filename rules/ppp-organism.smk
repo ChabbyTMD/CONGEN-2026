@@ -11,7 +11,9 @@ rule ppp_organism:
         "logs/{organism}_set_organism.log",
     params:
         organism=config['organism'],
-    shell:
-        """
-        papermill {input.input_notebook} {output.output_notebook} -k py-popgen -p organism {params.organism} 2> {log}
-        """
+    notebook:
+        "{input.input_notebook}"
+    # shell:
+    #     """
+    #     papermill {input.input_notebook} {output.output_notebook} -k py-popgen -p organism {params.organism} 2> {log}
+    #     """

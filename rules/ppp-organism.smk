@@ -13,5 +13,5 @@ rule ppp_organism:
         organism=config['organism'],
     shell:
         """
-        papermill {input.input_notebook} {output.output_notebook} -k py-popgen 2> {log}
+        papermill {input.input_notebook} {output.output_notebook} -k py-popgen -p organism {params.organism} 2> {log}
         """

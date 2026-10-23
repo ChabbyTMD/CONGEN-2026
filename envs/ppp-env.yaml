@@ -7,15 +7,10 @@ dependencies:
   - bcftools
   - ipykernel
   - ipython
-  - nbformat
-  - pandas
   - papermill
-  - perl
   - pip
-  - plink>=1.90b7.7
-  - py-popgen>=0.1.12
-  - scipy>=1.7.3
-  - vcftools>=0.1.16
+  - py-popgen
+  - vcftools
   - pip:
-    - biopython==1.81
-    - rpy2==3.5.17
+    - biopython
+    - rpy2

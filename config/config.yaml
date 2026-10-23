@@ -1,18 +1,18 @@
 organism: pan-205
 # Directories
-data_dir: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/
+data_dir: demo-input/
 
 # Input file paths
-model_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/input.model
-main_vcf_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/merged_chr1_10000.unphased.vcf.gz
+model_file: demo-input/input.model
+main_vcf_name: demo-input/merged_chr1_10000.unphased.vcf.gz
 
 # Generated output file paths
-stat_file_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/weir_fst_regions.bed
-filtered_vcf_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/merged_chr1_10000.unphased.filtered.vcf.gz
-int_bed_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/regions_for_sampling.bed
-target_loci_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/target_loci.bed
-tajimaD_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/tajimaD.bed
-windowed_pi_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/windowed_pi.bed
+stat_file_name: ppp-outputs/weir_fst_regions.bed
+filtered_vcf_name: ppp-outputs/merged_chr1_10000.unphased.filtered.vcf.gz
+int_bed_file: ppp-outputs/regions_for_sampling.bed
+target_loci_file: ppp-outputs/target_loci.bed
+tajimaD_file: ppp-outputs/tajimaD.bed
+windowed_pi_file: ppp-outputs/windowed_pi.bed
 
 # PPP parameters
 loci: 205

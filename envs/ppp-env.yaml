@@ -5,10 +5,9 @@ channels:
   - jaredgk
 dependencies:
   - bcftools
-  - ipykernel
   - pip
-  - py-popgen
   - vcftools
   - pip:
+    - papermill
     - biopython
     - rpy2

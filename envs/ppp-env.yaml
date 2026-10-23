@@ -6,6 +6,7 @@ channels:
 dependencies:
   - bcftools
   - pip
+  - pypopgen
   - vcftools
   - pip:
     - papermill

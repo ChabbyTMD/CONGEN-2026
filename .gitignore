@@ -2,3 +2,4 @@
 input/
 .snakemake/
 .vscode/
+.DS_Store

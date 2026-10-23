@@ -164,6 +164,7 @@ dependencies:
   - typing_extensions=4.7.1=pyha770c72_0
   - tzdata=2026c=h151e31d_0
   - urllib3=2.2.1=pyhd8ed1ab_0
+  - vcftools=0.1.16=pl5321hdcf5f25_11
   - wheel=0.42.0=pyhd8ed1ab_0
   - xorg-kbproto=1.0.7=hb9d3cd8_1003
   - xorg-libice=1.0.10=h7f98852_0

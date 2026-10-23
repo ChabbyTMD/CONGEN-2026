@@ -35,7 +35,7 @@ snakemake -np --cores 1 --use-conda --rerun-incomplete
 Once you have confirmed you dry run completes without errors, perform a run with;
 
 ```bash
-snakemake -np --cores 1 --use-conda --rerun-incomplete
+snakemake -p --cores 1 --use-conda --rerun-incomplete
 ```
 
 

@@ -1,11 +1,21 @@
-organism: danus
+organism: pan-205
 # Directories
-work_dir: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/notebooks
-data_dir: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/
-model_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/out.model
-main_vcf_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/input.vcf
-int_bed_file:
-target_loci_file:
-ima_input_file:
-subsamp_bed_file:
+data_dir: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/
 
+# Input file paths
+model_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/input.model
+main_vcf_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/merged_chr1_10000.unphased.vcf.gz
+
+# Generated output file paths
+stat_file_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/weir_fst_regions.bed
+filtered_vcf_name: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/merged_chr1_10000.unphased.filtered.vcf.gz
+int_bed_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/regions_for_sampling.bed
+target_loci_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/target_loci.bed
+tajimaD_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/tajimaD.bed
+windowed_pi_file: /usr/scratchH/tmugoya/CONGEN/CONGEN-2026/inputs/2pop/vcfs/windowed_pi.bed
+
+# PPP parameters
+loci: 205
+model: 2Pop
+statistic_window_size: 10000
+statistic_window_step: 10000

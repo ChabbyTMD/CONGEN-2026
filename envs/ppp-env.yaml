@@ -10,6 +10,7 @@ dependencies:
   - vcftools
   - pip:
     - ipykernel
+    - ipython
     - papermill
     - biopython
     - rpy2

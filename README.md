@@ -7,6 +7,9 @@ This repo is snakemake pipeline that wraps the PPP suite of tools for the ConGen
 You will need to activate the snakemake conda environment on the server or your local machine
 
 ```bash
+# Only create a new snakemake environment if one doesn't already exist.
+
+conda create -n snakemake -c bioconda -c conda-forge snakemake
 
 conda activate snakemake
 
@@ -45,11 +48,18 @@ Once you have confirmed you dry run completes without errors, perform a run with
 snakemake -p --cores 1 --use-conda --rerun-incomplete
 ```
 
+### Inspecting the workflow DAG
 
+The directed acyclic graph (DAG) of jobs represents Snakemake's execution plan. This can be inspected by running the command below:
+
+```bash
+
+snakemake --dag -np --cores 1 --use-conda | tail |  dot -Tpng > ppp.png
+
+```
 ## Inspecting outputs
 
 By default, all outputs BED files are located in the `ppp-outputs` directory unless otherwise declared in the `config.yaml` file. Additionally, inspect the jupyter notebook at the generated `results/{organism}` directory for all the stats at a glance.
-
 
 ## Troublshooting and Help.
 

@@ -20,6 +20,13 @@ All required input files must be defined in the workflow [`config.yaml`](config/
 
 > NOTE: All output paths must be located in the same directory.
 
+Create a `ppp-outputs` directory at the root of the repository.
+
+```bash
+
+mkdir ppp-outputs
+```
+
 
 ## Running the workflow
 
